@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RdvInstruction</class>
+ <widget class="QDialog" name="RdvInstruction">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>598</width>
+    <height>239</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RDV Instruction</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/instruction.png</normaloff>icons/instruction.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QCheckBox" name="chbx_wrap">
+     <property name="text">
+      <string>Wrap</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPlainTextEdit" name="txt_input_field">
+     <property name="styleSheet">
+      <string notr="true">QPlainTextEdit {
+    border: none;  /* Убираем рамки */
+    outline: none; /* Убираем синие линии при фокусе */
+    background-color: #2E2E2E; /* Темный фон */
+    color: #C5C5C5; /* Цвет текста */
+}
+
+/* Стиль для вертикальной полосы прокрутки */
+QScrollBar:vertical {
+    border: none;
+    background-color: #2E2E2E;  /* Цвет фона */
+    width: 10px;                /* Ширина полосы прокрутки */
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #5E5E5E;  /* Цвет ползунка */
+    min-height: 10px;
+    border-radius: 5px;         /* Закругление углов ползунка */
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background-color: #4A4A4A;  /* Цвет кнопок вверх и вниз */
+    height: 15px;
+    subcontrol-origin: margin;
+    subcontrol-position: top;
+    border-radius: 4px;         /* Закругление углов кнопок */
+}
+
+QScrollBar::add-line:vertical:hover,
+QScrollBar::sub-line:vertical:hover {
+    background-color: #6E6E6E;  /* Цвет кнопок при наведении */
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background-color: #2E2E2E;  /* Фон при пустом пространстве полосы прокрутки */
+}
+
+/* Стиль для горизонтальной полосы прокрутки */
+QScrollBar:horizontal {
+    border: none;
+    background-color: #2E2E2E;  /* Цвет фона */
+    height: 10px;               /* Высота горизонтальной полосы прокрутки */
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #5E5E5E;  /* Цвет ползунка */
+    min-width: 10px;
+    border-radius: 5px;         /* Закругление углов ползунка */
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    background-color: #4A4A4A;  /* Цвет кнопок влево и вправо */
+    width: 15px;
+    subcontrol-origin: margin;
+    subcontrol-position: left;
+    border-radius: 4px;         /* Закругление углов кнопок */
+}
+
+QScrollBar::add-line:horizontal:hover,
+QScrollBar::sub-line:horizontal:hover {
+    background-color: #6E6E6E;  /* Цвет кнопок при наведении */
+}
+
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background-color: #2E2E2E;  /* Фон при пустом пространстве полосы прокрутки */
+}
+</string>
+     </property>
+     <property name="plainText">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Сохраняем все инструкции</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
