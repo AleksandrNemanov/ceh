@@ -14,6 +14,7 @@ from libs.window.RdvInstructionWindow import RdvInstructionWindow
 from libs.window.RdvPsiWindow import RdvPsiWindow
 from libs.window.RdvRequestsWindow import RdvRequestsWindow
 from libs.window.RdvScriptsWindow import RdvScriptsWindow
+from libs.window.RdvCreateADGP import CreateADGP
 from libs.py_from_ui.ui_mainwindow import Ui_MainWindow
 
 
@@ -64,6 +65,7 @@ class MainWindow(QMainWindow):
         self.ui.tab_rdv_info.triggered.connect(self.open_window_rdv_info)
         self.ui.tab_rdv_psi.triggered.connect(self.open_window_rdv_psi)
         self.ui.tab_rdv_instruction.triggered.connect(self.open_window_rdv_instruction)
+        self.ui.tab_rdv_adgp.triggered.connect(self.open_window_create_adgp)
 
     def restore_window_state(self) -> None:
         previous_window_size: Any = self.settings_main_window.value("size", QSize(950, 370))
@@ -90,6 +92,10 @@ class MainWindow(QMainWindow):
 
     def open_window_rdv_instruction(self) -> None:
         dialog = RdvInstructionWindow(self)
+        dialog.exec()
+
+    def open_window_create_adgp(self) -> None:
+        dialog = CreateADGP(self)
         dialog.exec()
 
     def show_example(self, checkbox_pushed_button, pushed_button) -> None:

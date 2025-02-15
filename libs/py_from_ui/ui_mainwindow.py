@@ -664,7 +664,7 @@ class Ui_MainWindow(object):
         self.label_2.setGeometry(QRect(397, 31, 81, 32))
         self.btn_all_branches_another_btn = QPushButton(self.centralwidget)
         self.btn_all_branches_another_btn.setObjectName(u"btn_all_branches_another_btn")
-        self.btn_all_branches_another_btn.setGeometry(QRect(10, 3, 91, 21))
+        self.btn_all_branches_another_btn.setGeometry(QRect(10, 3, 91, 25))
         self.btn_all_branches_another_btn.setStyleSheet(u"QPushButton {\n"
 "    background-color: #4A4A4A; /* \u041f\u0440\u0438\u0433\u043b\u0443\u0448\u0435\u043d\u043d\u044b\u0439 \u0441\u0435\u0440\u043e-\u0441\u0438\u043d\u0438\u0439 \u0446\u0432\u0435\u0442 \u0434\u043b\u044f \u0444\u043e\u043d\u0430 \u043a\u043d\u043e\u043f\u043a\u0438 */\n"
 "    color: #D3D3D3; /* \u0421\u0432\u0435\u0442\u043b\u043e-\u0441\u0435\u0440\u044b\u0439 \u0446\u0432\u0435\u0442 \u0442\u0435\u043a\u0441\u0442\u0430 */\n"
