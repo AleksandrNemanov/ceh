@@ -1410,6 +1410,42 @@ QPushButton:pressed {
 нет &quot;nullable&quot;?</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="btn_all_branches_another_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>3</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #4A4A4A; /* Приглушенный серо-синий цвет для фона кнопки */
+    color: #D3D3D3; /* Светло-серый цвет текста */
+    border-radius: 5px; /* Скругленные углы */
+    padding: 3px; /* Внутренние отступы */
+    font-family: Arial, sans-serif; /* Шрифт */
+    font-size: 12px; /* Размер шрифта */
+    border: 1px solid #383838; /* Тонкая темная граница */
+}
+
+QPushButton:hover {
+    background-color: #5C5C5C; /* Чуть светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #3A3A3A; /* Темно-серый при нажатии */
+    padding-left: 5px; /* Сдвиг текста вправо при нажатии */
+    padding-top: 5px; /* Сдвиг текста вниз при нажатии */
+    border: 1px solid #2C2C2C; /* Более темная граница при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Все мои ветки</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -1432,6 +1468,7 @@ QPushButton:pressed {
      <addaction name="tab_rdv_info"/>
      <addaction name="tab_rdv_instruction"/>
      <addaction name="tab_rdv_psi"/>
+     <addaction name="tab_rdv_adgp"/>
     </widget>
     <addaction name="tab_all_branches"/>
     <addaction name="separator"/>
@@ -1481,6 +1518,11 @@ QPushButton:pressed {
   <action name="tab_rdv_instruction">
    <property name="text">
     <string>Инструкции и подключения</string>
+   </property>
+  </action>
+  <action name="tab_rdv_adgp">
+   <property name="text">
+    <string>Создание ADGP</string>
    </property>
   </action>
  </widget>

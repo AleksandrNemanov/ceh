@@ -59,6 +59,7 @@ class MainWindow(QMainWindow):
             button.clicked.connect(lambda checked, chbox=checkbox, btn=button: self.show_example(chbox, btn))
 
         self.ui.tab_all_branches.triggered.connect(self.open_window_all_branches)
+        self.ui.btn_all_branches_another_btn.clicked.connect(self.open_window_all_branches)
         self.ui.tab_rdv_scripts.triggered.connect(self.open_window_rdv_scripts)
         self.ui.tab_rdv_info.triggered.connect(self.open_window_rdv_info)
         self.ui.tab_rdv_psi.triggered.connect(self.open_window_rdv_psi)
