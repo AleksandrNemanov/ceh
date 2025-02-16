@@ -92,11 +92,12 @@ class Ui_RdvADGP(object):
 "    font-family: Arial, sans-serif; /* \u0428\u0440\u0438\u0444\u0442 */\n"
 "    text-align: left;\n"
 "    padding-left: 5px;\n"
+"    border: 1px solid #2c3e35;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: #292929; /* \u0426\u0432\u0435\u0442 \u0444\u043e\u043d\u0430 \u043f\u0440\u0438 \u043d\u0430\u0432\u0435\u0434\u0435"
-                        "\u043d\u0438\u0438 */\n"
+"    background-color: #292929; /* \u0426\u0432\u0435\u0442 \u0444\u043e\u043d\u0430 \u043f\u0440\u0438"
+                        " \u043d\u0430\u0432\u0435\u0434\u0435\u043d\u0438\u0438 */\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
@@ -124,6 +125,7 @@ class Ui_RdvADGP(object):
         self.pushButton_4 = QPushButton(RdvADGP)
         self.pushButton_4.setObjectName(u"pushButton_4")
         self.pushButton_4.setGeometry(QRect(35, 150, 271, 31))
+        self.pushButton_4.setStyleSheet(u"")
         self.pushButton_5 = QPushButton(RdvADGP)
         self.pushButton_5.setObjectName(u"pushButton_5")
         self.pushButton_5.setGeometry(QRect(35, 320, 310, 30))
@@ -207,6 +209,7 @@ class Ui_RdvADGP(object):
         self.plainTextEdit_3 = QPlainTextEdit(RdvADGP)
         self.plainTextEdit_3.setObjectName(u"plainTextEdit_3")
         self.plainTextEdit_3.setGeometry(QRect(180, 90, 311, 31))
+        self.plainTextEdit_3.setStyleSheet(u"")
         self.plainTextEdit_4 = QPlainTextEdit(RdvADGP)
         self.plainTextEdit_4.setObjectName(u"plainTextEdit_4")
         self.plainTextEdit_4.setGeometry(QRect(330, 50, 241, 31))

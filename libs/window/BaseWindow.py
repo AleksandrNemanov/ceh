@@ -12,6 +12,7 @@ class BaseWindow(QDialog):
         self.txt_input_field = None
         self.data_file_name = None
         self.settings_window = None
+        self.file_extension = 'txt'
 
     def change_wrap_state(self) -> None:
         if self.chbx_wrap.isChecked():
@@ -22,17 +23,17 @@ class BaseWindow(QDialog):
     def showEvent(self, event: QShowEvent) -> None:
         self.restore_window_state()
         os.makedirs('./files', exist_ok=True)
-        if os.path.exists(f'./files/{self.data_file_name}.txt'):
-            with open(file=f'./files/{self.data_file_name}.txt', mode='r', encoding='UTF-8') as f:
+        if os.path.exists(f'./files/{self.data_file_name}.{self.file_extension}'):
+            with open(file=f'./files/{self.data_file_name}.{self.file_extension}', mode='r', encoding='UTF-8') as f:
                 self.txt_input_field.setPlainText(f.read())
         else:
-            with open(file=f'./files/{self.data_file_name}.txt', mode='a', encoding='UTF-8') as f:
+            with open(file=f'./files/{self.data_file_name}.{self.file_extension}', mode='a', encoding='UTF-8') as f:
                 pass
 
     def closeEvent(self, event: QCloseEvent) -> None:
         self.settings_window.setValue("size", self.size())
         self.settings_window.setValue("pos", self.pos())
-        with open(file=f'./files/{self.data_file_name}.txt', mode='w', encoding='UTF-8') as f:
+        with open(file=f'./files/{self.data_file_name}.{self.file_extension}', mode='w', encoding='UTF-8') as f:
             f.write(self.txt_input_field.toPlainText())
         event.accept()  # Сообщаем, что ранее выполненный код корректно отработал и можно действительно закрыть окно
 

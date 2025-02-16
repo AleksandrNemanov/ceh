@@ -8,6 +8,7 @@ from libs.py_from_ui.ui_rdv_adgp import Ui_RdvADGP
 class CreateADGP(BaseWindow, Ui_RdvADGP):
     def __init__(self, parent=None):
         super().__init__(parent)
+        self.file_extension = 'json'
 
         self.setupUi(self)
         # QSettings(organization="MyApp", application="CreateADGP")
